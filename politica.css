@@ -4,7 +4,7 @@
 }
 
 body{
-    background: #4180ab;
+    background: #4eb3de;
     font-family: Arial, Herlvetica, sans-serif;
 }
 
@@ -21,5 +21,31 @@ header{
     margin: 0px auto;
     text-align: center;
     line-height: 100px;
-    border-bottom:3px dashed red;
+    
+}
+
+nav{
+    background-color: #4180ab;
+    height: 35px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#content{
+    float: left;
+    width: 80%;
+    background-color: #045071;
+}
+
+aside{
+    float: left;
+    width: 20%;
 }
