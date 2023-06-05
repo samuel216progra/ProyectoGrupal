@@ -4,8 +4,9 @@
 }
 
 body{
-    background: #4eb3de;
+    background: lightgray;
     font-family: Arial, Herlvetica, sans-serif;
+    color: white;
 }
 
 #conteiner{
@@ -41,11 +42,31 @@ nav ul li{
 
 #content{
     float: left;
-    width: 80%;
+    width: calc(80% - 80px);
+    min-height: 500px;
     background-color: #045071;
+    padding: 40px;
+}
+
+.article{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
 }
 
 aside{
     float: left;
-    width: 20%;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background-color: #26979f;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    background-color: #4180ab;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
 }
