@@ -1,18 +1,17 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
-    margin:0;
-    background-color:rgb(230, 228, 228);
+    margin: 0;
+    background-color: #efefef;
+}
+header{
+    background-color: #306EFF;
+    color:white;
+    padding: 3rem;
 }
 
-#Titulo1{
-    color:#b8071c;
-}
-#Titulo1{
-    font-size: 40px;
-}
-
-#Titulo1{
-    border-style: solid;
-    border-color: aquamarine;
-    border-radius: 7px;
-    border-width: 5px;
+header h1{
+   font-size: 4rem; 
 }
