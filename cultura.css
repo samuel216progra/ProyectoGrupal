@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 63px;
-  background: #171717;
+  background: #db3734;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -83,10 +83,10 @@ p {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 40px;
-  border: 2px solid #9c27b0;
+  border: 2px solid#157DEC;
   color: #fff;
   text-decoration: none;
-  background: #9c27b0;
+  background: #157DEC;
 }
 
 .btn:hover {
@@ -163,7 +163,7 @@ p {
 }
 
 .price {
-  background: url(img/costos.jpg) no-repeat center;
+  background: url(img/AntiguaGuate.jpg) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
