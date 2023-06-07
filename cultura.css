@@ -1,163 +1,196 @@
-/* Estilos generales */
-html{
-    background-color: #a8c2f7;
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background: #171717;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #3f3f3f;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header {
+  height: 60vh !important;
+  background: url(img/FONDO22.webp) no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 100px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid #9c27b0;
+  color: #fff;
+  text-decoration: none;
+  background: #9c27b0;
+}
+
+.btn:hover {
+  background: none;
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+}
+
+.btn-home {
+  display: flex;
+}
+
+.btn-home a {
+  margin: 0 10px;
+}
+
+
+.content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sau {
+  padding: 30px;
+  background: #1f1d1d
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.box-container .box {
+  height: 11rem;
+  width: 17rem;
+  background: #101010;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+  margin: 2rem;   
+}
+
+.box-container .box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #9c27b0;
+  font-size: 2rem;
+  margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+  font-size: 20px;
+  color: #9c27b0;
+
+}
+
+.box-container .box p {
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.about {
+  background: #171717;
+}
+
+.price {
+  background: url(img/costos.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+
+.contact {
+  padding-top: 20px;
+  background: #171717;
+  padding-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+
+  .title {
+      margin-bottom: 0;
+      font-size: 40px;
   }
-  
-  /* Estilos del encabezado */
-  header {
-    background-color: #306EFF;
-    color: #fff;
-    padding: 20px 0;
+
+  .sau {
+      height: 100vh;
   }
-  
-  header h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 600;
+
+  .navbar {
+      display: none;
   }
+ 
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  nav ul li a:hover {
-    color: #a8c2f7;
-  }
-  
-  /* Estilos de la sección de artículos */
-  section {
-    margin: 40px 0;
-  }
-  
-  section h2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  
-  article {
-    margin-bottom: 40px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  article h3 {
-    font-size: 24px;
-    font-weight: 600;
-    padding: 20px;
-    margin: 0;
-    background-color: #f5f5f5;
-  }
-  
-  article img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  article p {
-    padding: 20px;
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  article a {
-    display: inline-block;
-    background-color: #a8c2f7;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    margin: 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  article a:hover {
-    background-color: #3c5f9e;
-  }
-  
-  /* Estilos de la barra lateral */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    background-color: #f78583;
-    padding: 20px;
-  }
-  
-  .sidebar h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .sidebar ul li a:hover {
-    color: #a8c2f7;
-  }
-  
-  /* Estilos del pie de página */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    color: #a8c2f7;
-  }
-  
+}
